@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>社群精选</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background: url('https://youke1.picui.cn/s1/2025/10/06/68e3679c12054.png') no-repeat center center;
+            background-size: 110% 60%;
+            background-color: #6ecbf5;
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            overflow: hidden;
+            backdrop-filter: blur(5px);
+        }
+        
+        header {
+            background: linear-gradient(to right, rgba(18, 183, 245, 0.05), rgba(7, 112, 227, 0.05));
+            color: #1e3a8a;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #1e3a8a;
+            opacity: 1;
+        }
+        
+        header p {
+            opacity: 1;
+            color: #1e3a8a;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: rgba(30, 58, 138, 0.1);
+            color: #1e3a8a;
+            border-radius: 10px;
+            text-decoration: none;
+            border: 1px solid rgba(30, 58, 138, 0.5);
+            transition: all 0.3s;
+        }
+        
+        .back-btn:hover {
+            background: rgba(30, 58, 138, 0.2);
+        }
+        
+        .content {
+            padding: 30px;
+        }
+        
+        .gallery-section {
+            margin-bottom: 40px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #1e3a8a;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed rgba(30, 58, 138, 0.3);
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .gallery-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .gallery-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-info {
+            padding: 15px;
+        }
+        
+        .gallery-title {
+            font-size: 1.2rem;
+            color: #1e3a8a;
+            margin-bottom: 8px;
+        }
+        
+        .gallery-description {
+            color: #1e3a8a;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #1e3a8a;
+            font-size: 0.9rem;
+            border-top: 1px solid rgba(30, 58, 138, 0.3);
+            opacity: 1;
+        }
+        
+        @media (max-width: 768px) {
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                gap: 20px;
+            }
+            
+            .content {
+                padding: 20px;
+            }
+            
+            header {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>社群精选</h1>
+            <p>C.P.C社区</p>
+            <a href="https://shaerad.github.io/CPC/" class="back-btn">
+                <i class="fas fa-arrow-left"></i> 返回首页
+            </a>
+        </header>
+        
+        <div class="content">
+            <div class="gallery-section">
+                <h2 class="section-title">Car Parking</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e370251e69c.png" alt="来自外星" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Burning or from Earth Select All Delete</h3>
+                            <p class="gallery-description">Source: SHAER</p>
+                        </div>
+                    </div>
+                   
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e37115dbb1a.png" alt="來自臺灣" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">Taiwan Camry Police Car</h3>
+                            <p class="gallery-description">Source: SHAER</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e372ca52fb8.jpg" alt="来自火星" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">俄亥俄州警车</h3>
+                            <p class="gallery-description">来源:SHAER</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e373123b363.jpg" alt="来自月球背面" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">斯洛文尼亚🇸🇮</h3>
+                            <p class="gallery-description">来源:SHAER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-section">
+                <h2 class="section-title">汽车模拟器2</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e37375d0411.jpg" alt="来自RX" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">聚会图片</h3>
+                            <p class="gallery-description">来源:呆子律师</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e373e999f4f.jpg" alt="午后" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">涂装分享</h3>
+                            <p class="gallery-description">来源:呆子律师</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e3745887feb.jpg" alt="无" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">涂装分享</h3>
+                            <p class="gallery-description">来源:呆子律师</p>
+                        </div>
+                    </div>
+                   
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e3749e856f7.jpg" alt="我最喜欢的" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">涂装分享</h3>
+                            <p class="gallery-description">来源:shaer</p>
+                        </div>
+                    </div>
+                       <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e374ebcac9f.png" alt="傻子水印都不去除" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">涂装分享</h3>
+                            <p class="gallery-description">来源:xjiaz</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://youke1.picui.cn/s1/2025/10/06/68e37555099ea.jpg" alt="无" class="gallery-img">
+                        <div class="gallery-info">
+                            <h3 class="gallery-title">群相册</h3>
+                            <p class="gallery-description">来源:呆子律师</p>
+                        </div>
+                    </div>            
+                 </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>© 2025 C.P.C SHAER</p>
+        </footer>
+    </div>
+</body>
+</html>
